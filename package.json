@@ -1,0 +1,46 @@
+{
+  "name": "investment-management-server",
+  "version": "0.0.1",
+  "description": "A Server which is used in conjunction with finance-manager-backend to get stock data",
+  "main": "app.py",
+  "scripts": {
+    "prepare": "husky install && husky add .husky/commit-msg 'npx --no-install commitlint --edit $1'",
+    "git:stage": "git add",
+    "git:commit": "cz",
+    "git:push": "git push --follow-tags origin dev",
+    "release:pre": "standard-version --prerelease --sign",
+    "release:patch": "standard-version --release-as patch --sign",
+    "release:minor": "standard-version --release-as minor --sign",
+    "release:major": "standard-version --release-as major --sign"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tks18/investment-management-server.git"
+  },
+  "keywords": [
+    "investment",
+    "finance-management",
+    "flask",
+    "python"
+  ],
+  "author": "tks18",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tks18/investment-management-server/issues"
+  },
+  "homepage": "https://github.com/tks18/investment-management-server#readme",
+  "packageManager": "yarn@3.3.0",
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.2",
+    "standard-version": "^9.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
