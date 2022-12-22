@@ -1,6 +1,7 @@
+from os import getcwd, path
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(dotenv_path=path.join(getcwd(), ".env"))
 
 from app import Server
 from app import routes

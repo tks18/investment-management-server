@@ -7,7 +7,7 @@
     "prepare": "husky install && husky add .husky/commit-msg 'npx --no-install commitlint --edit $1'",
     "git:stage": "git add",
     "git:commit": "cz",
-    "git:push": "git push --follow-tags origin dev",
+    "git:push": "git push --follow-tags origin master",
     "release:pre": "standard-version --prerelease --sign",
     "release:patch": "standard-version --release-as patch --sign",
     "release:minor": "standard-version --release-as minor --sign",
