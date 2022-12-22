@@ -1,6 +1,6 @@
 {
   "name": "investment-management-server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Server which is used in conjunction with finance-manager-backend to get stock data",
   "main": "app.py",
   "scripts": {
